@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 기본 파비콘 -->
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<!-- iOS -->
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180x180.png">
+<!-- Android / PWA -->
+<link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="img/favicon-512x512.png">
+<!-- SVG 지원 -->
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+<!-- 구글폰트 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--로보토(영문) 노토산스(한글) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- 폰트어썸 -->
+<script src="https://kit.fontawesome.com/e5ed17a5ca.js" crossorigin="anonymous"></script>
+
+<!-- 스와이퍼 css -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+<!-- css -->
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/index.css">
+
+
+
+
+<title>마우로예술극장</title>
+</head>
+
+
+
+<body>
+<!-- 헤더 -->
+<header id="mainNav">
+    <nav class="container-1720 flex-box">
+        <div class="flex-box">
+            <a href="index.html" class="logo"> <img src="img/logo.png" alt=""></a>
+            <ul class="flex-box">
+                <!-- 메인메뉴 -->
+                <li><a href="sub1.html">공연안내</a></li>
+                <li><a href="sub2.html">극장소개</a></li>
+                <li><a href="#">예매확인</a></li>
+            </ul>
+        </div>
+
+        <div class="flex-box menu">
+            <a><i class="fa-solid fa-user"></i></a>
+            <p id="lang">ENG</p>
+        </div>
+    </nav>
+</header>
+
+
+<!-- 모바일 메뉴버튼 -->
+<div class="mobile-header flex-box">
+    <img src="img/logo.png" alt="" class="logo" onclick="window.open('https://jaka307.dothome.co.kr/')">
+    <div id="hamberger-bt"><i class="fa-solid fa-bars-staggered"></i></div>
+</div>
+
+<!-- 모바일 메뉴창 -->
+<div id="mobile-menu">
+    <div class="icon-close">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="mobile-menu-top">
+        <div>
+            <p><span>Guest</span>님 안녕하세요</p>
+            <div class="flex-box">
+                <p>회원가입</p> <p>로그인</p>
+            </div> <!-- 인덱스 -->
+            <a href="#">비회원으로 시작하기</a>
+        </div>
+    </div>
+
+    <div class="mobile-menu-list">
+        <ul>
+            <span><li><a href="sub1.html">공연안내</a></li></span>
+            <div> <!-- 서버 주소 이름 추가하기 -->
+                <li>현재 진행중인 공연</li>
+                <li>예정 공연</li>
+                <li>지난 공연</li>
+            </div>
+        </ul>
+        
+        <ul>
+            <span><li><a href="sub2.html">극장소개</a></li></span>
+            <div> <!-- 서버 주소 이름 추가하기 -->
+                <li>본관</li>
+                <li>꾸러기관</li>
+            </div>
+        </ul>
+        
+        <ul>
+            <span><li><a href="index.html">예매확인</a></li></span>
+            <div> <!-- 서버 주소 이름 추가하기 -->
+                <li>예매내역 조회</li>
+                <li>모바일 티켓 확인</li>
+                <li>예매 취소 / 환불</li>
+            </div>
+        </ul>
+    </div>
+</div>
+
+<!-- 메인 -->
+    <main>
+        <!-- 섹션1 -->
+        <section class="s-1">
+            <!-- 스와이퍼 배너 -->
+            <!-- 스와이퍼 -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="banner-text">
+                                    <h1>어린왕자</h1>
+                                    <p>2025.11.07 ~ 2026.3.11</p>
+                                </div>
+                                <img src="img/pc1_main_banner_2.jpg" alt="" >
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="banner-text">
+                                    <h1>고도를 기다리며</h1>
+                                    <p>2025.11.07 ~ 2026.3.11</p>
+                                </div>
+                                <img src="img/pc1_main_banner_1.jpg" alt="" >
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="banner-text">
+                                    <h1>옥탑방 고양이</h1>
+                                    <p>2025.11.07 ~ 2026.3.11</p>
+                                </div>
+                                <img src="img/pc1_main_banner_3.jpg" alt="" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            <!-- 공지사항 -->
+            <div class="notice">
+                <div class="flex-box container-1720">
+                    <p>
+                        <i class="fa-solid fa-bullhorn"></i>
+                        새소식 &nbsp; &#124; &nbsp; 꾸러기관 수어 통역 자원봉사자 모집 안내
+                    </p>
+                    <p class="more">더보기 <i class="fa-solid fa-play"></i> </p>
+                </div>
+            </div>
+
+            <div class="notice-mobile">
+                <div class="flex-box container-1720 notice-line">
+                    <p>
+                        <i class="fa-solid fa-bullhorn"></i><span>새소식</span>
+                    </p>
+                    <p class="notice-more">꾸러기관 수어 통역 자원봉사자 모집 안내
+                        <i class="fa-solid fa-play"></i>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 섹션2 -->
+        <section class="s-2 container-1720">
+            <div class="flex-box">
+                <h2>현재 진행중인 공연</h2>
+                
+            </div><p>전체보기 &nbsp; &#43;</p>
+
+            <!-- 스와이퍼 -->
+            <div class="s-2-box">
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <img src="img/show list_1.jpg" alt="">
+                            <a href="#">자세히보기</a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="img/show list_2.jpg" alt="">
+                            <a href="#">자세히보기</a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="img/show list_3.jpg" alt="">
+                            <a href="#">자세히보기</a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="img/show list_4.jpg" alt="">
+                            <a href="#">자세히보기</a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="img/show list_5.jpg" alt="">
+                            <a href="#">자세히보기</a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="img/show list_3.jpg" alt="">
+                            <a href="#">자세히보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 섹션3 -->
+        <section class="s-3 container-1720">
+                    <div class="flex-box"> 
+                        <div class="s-3-left"> <!-- 슬라이드 -->
+                            <h2>지금 주목받는 공연</h2>
+                            <div class="swiper mySwiper3">
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <h3>옥탑방 고양이</h3>
+                                            <p>옥탑방에서 배우는 사랑</p>
+                                        </div>
+                                        <img src="img/pc1_attention_1.jpg" alt="">
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <h3>오이디푸스</h3>
+                                            <p>운명에서 벗어나고자 했던 인간</p>
+                                        </div>
+                                        <img src="img/pc1_attention_2.jpg" alt="">
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <h3>백설공주</h3>
+                                            <p>동화로 배우는 권선징악</p>
+                                        </div>
+                                        <img src="img/pc1_attention_3.jpg" alt="">
+                                    </div>
+
+                                </div>
+                            <div class="swiper-pagination-1"></div>
+                            </div>
+                        </div>
+
+                        <div class="s-3-right"> <!-- 캘린더 -->
+                            <div class="flex-box">
+                                <h2>캘린더</h2>
+                                <div class="calendar-info flex-box">
+                                    <div class="flex-box">
+                                        <span class="calendar-square"></span>
+                                        <p>본관</p>
+                                    </div>
+
+                                    <div class="flex-box">
+                                        <span class="calendar-circle"></span>
+                                        <p>꾸러기관</p>
+                                    </div>
+
+                                    <div class="flex-box date">
+                                        <i class="fa-solid fa-circle-chevron-left"></i>
+                                        <p>2026. 01</p>
+                                        <i class="fa-solid fa-circle-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calendar-area">
+                                <img src="img/pc1_calendar.png" alt="" class="calendar-img-pc">
+                                <img src="img/mobile1_calendar.png" alt="" class="calendar-img-mobile">
+                                <div class="calendar-modal">
+                                    <div class="flex-box">
+                                        <span class="square"></span>
+                                        <div>
+                                            <p>옥탑방 고양이</p>
+                                            <p>고도를 기다리며</p>
+                                            <p>오이디푸스</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="flex-box">
+                                        <span class="circle"></span>
+                                        <div>
+                                            <p>어린왕자</p>
+                                            <p>백설공주</p>
+                                            <p>인어공주</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+        </section>
+
+
+        <!-- 섹션4 -->
+        <section class="s-4 container-1720">
+            <div class="flex-box">
+                <h2>스토어</h2>
+                
+            </div>
+            <div class="all"><p>전체보기 &nbsp; &#43;</p></div>
+
+            <!-- 슬라이드 -->
+            <div class="swiper mySwiper4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div><img src="img/store_1.jpg" alt=""></div>
+                            <div class="store-info">
+                                <p>옥탑방 고양이</p>
+                                <div class="flex-box-1">
+                                    <p>고양이 머그컵</p>
+                                    <h3>16,800원</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div><img src="img/store_2.jpg" alt=""></div>
+                            <div class="store-info">
+                                <p>오이디푸스</p>
+                                <div class="flex-box-1">
+                                    <p>발비누 세트</p>
+                                    <h3>23,900원</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div><img src="img/store_3.jpg" alt=""></div>
+                            <div class="store-info">
+                                <p>고도를 기다리며</p>
+                                <div class="flex-box-1">
+                                    <p>만년필 세트</p>
+                                    <h3>89,900원</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div><img src="img/store_4.jpg" alt=""></div>
+                            <div class="store-info">
+                                <p>어린왕자</p>
+                                <div class="flex-box-1">
+                                    <p>장미돔</p>
+                                    <h3>19,900원</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div><img src="img/store_5.jpg" alt=""></div>
+                            <div class="store-info">
+                                <p>인어공주</p>
+                                <div class="flex-box-1">
+                                    <p>식기 세트</p>
+                                    <h3>39,800원</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div><img src="img/store_3.jpg" alt=""></div>
+                            <div class="store-info">
+                                <p>고도를 기다리며</p>
+                                <div class="flex-box-1">
+                                    <p>만년필 세트</p>
+                                    <h3>89,900원</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div> 
+        </section>
+
+        <!-- 섹션5 -->
+        <section class="s-5 container-1720">
+            <h2>이용안내</h2>
+            <div class="flex-box">
+                <div class="icon">
+                    <div><i class="fa-solid fa-comments"></i></div>
+                    <p>1대1 문의</p>
+                </div>
+
+                <div class="icon">
+                    <div><i class="fa-solid fa-ticket-simple"></i></div>
+                    <p>쿠폰사용</p>
+                </div>
+                
+                <div class="icon">
+                    <div><i class="fa-solid fa-people-group"></i></div>
+                    <p>단체 문의</p>
+                </div>
+
+                <div class="icon">
+                    <div><i class="fa-solid fa-circle-question"></i></div>
+                    <p>FAQ</p>
+                </div>
+
+                <div class="icon">
+                    <div><i class="fa-solid fa-box"></i></div>
+                    <p>분실물 문의</p>
+                </div>
+
+                <div class="icon">
+                    <div><i class="fa-solid fa-mug-saucer"></i></div>
+                    <p>편의시설</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+<!-- 푸터 -->
+    <footer>
+        <div class="container-1720">
+                <div class="footer-pc">
+                    <div><img src="img/logo-1-02.png" alt=""></div>
+                    <div class="flex-box">
+                        <div>
+                            <p><span>대표자</span> &nbsp; 나대표</p>
+                            <p><span>사업자등록번호</span> &nbsp; 159-75-35183</p>
+                            <p><span>통신판매업신고</span> &nbsp; 서초 제 1346호</p>
+                        </div>
+                        
+                        <div>
+                            <p><span>&#91;본관&#93;</span></p>
+                            <p><span>콜센터</span> &nbsp; 1588-1235 (09:00 ~ 20:00) / 점심시간 12:00 ~ 13:00</p>
+                            <p><span>운영시간</span> &nbsp; 화요일~일요일 / 매주 월요일 및 설·추석 당일 휴무</p>
+                            <p><span>주소</span> &nbsp; (우)14253 서울시 임의시 금은동 임의순환로 마우로예술극장 본관</p>
+                        </div>
+        
+                        <div>
+                            <p><span>&#91;꾸러기관&#93;</span></p>
+                            <p><span>꾸러기관 콜센터</span> &nbsp; 1588-1236 (09:00 ~ 20:00) / 점심시간 12:00 ~ 13:00</p>
+                            <p><span>운영시간</span> &nbsp; 화요일~일요일 운영 / 매주 월요일 및 설·추석 당일 휴무</p>
+                            <p><span>꾸러기관 주소</span> &nbsp; (우) 14253 서울시 임의시 금은동 임의순환로 마우로예술극장 꾸러기관</p>
+                        </div>
+        
+                        <div class="flex-box link-icon">
+                            <a href="https://www.youtube.com/?reload=9&app=desktop&hl=ko&gl=KR">
+                                <i class="fa-brands fa-square-youtube"></i>
+                            </a>
+        
+                            <a href="https://www.instagram.com/">
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </a>
+        
+                            <a href="https://www.facebook.com/?locale=ko_KR">
+                                <i class="fa-brands fa-square-facebook"></i>
+                            </a>
+        
+                            <a href="https://x.com/?lang=ko">
+                                <i class="fa-brands fa-square-x-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="footer-tablet">
+                <div><img src="img/logo-1-02.png" alt=""></div>
+
+                <div class="flex-box">
+                    <p><span>대표자</span> &nbsp; 나대표</p>
+                    <p><span>사업자등록번호</span> &nbsp; 159-75-35183</p>
+                    <p><span>통신판매업신고</span> &nbsp; 서초 제 1346호</p>
+                </div>
+
+                <div>
+                    <p><span>&#91;본관&#93;</span></p>
+                    <p><span>콜센터</span> &nbsp; 1588-1235 (09:00 ~ 20:00) / 점심시간 12:00 ~ 13:00</p>
+                    <p><span>운영시간</span> &nbsp; 화요일~일요일 / 매주 월요일 및 설·추석 당일 휴무</p>
+                    <p><span>주소</span> &nbsp; (우)14253 서울시 임의시 금은동 임의순환로 마우로예술극장 본관</p>
+                </div>
+
+                    <div>
+                        <p><span>&#91;꾸러기관&#93;</span></p>
+                        <p><span>꾸러기관 콜센터</span> &nbsp; 1588-1236 (09:00 ~ 20:00) / 점심시간 12:00 ~ 13:00</p>
+                        <p><span>운영시간</span> &nbsp; 화요일~일요일 운영 / 매주 월요일 및 설·추석 당일 휴무</p>
+                        <p><span>꾸러기관 주소</span> &nbsp; (우) 14253 서울시 임의시 금은동 임의순환로 마우로예술극장 꾸러기관</p>
+                    </div>
+
+                    <div class="flex-box link-icon">
+                        <a href="https://www.youtube.com/?reload=9&app=desktop&hl=ko&gl=KR">
+                            <i class="fa-brands fa-square-youtube"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/?locale=ko_KR">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+
+                        <a href="https://x.com/?lang=ko">
+                            <i class="fa-brands fa-square-x-twitter"></i>
+                        </a>
+                    </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+<!-- 플로팅버튼 -->
+    <div class="top">
+        <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
+
+<!-- 모달창 -->
+<div class="modal" id="modal-1">
+    <div class="modal-wrap">
+        <div class="modal-body">
+            <div class="close-bt">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+            <div class="container-1400">
+                <h1>웹페이지 가이드</h1>
+                <div><img src="img/modal.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+<!-- 스와이퍼 JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+<!-- 제이쿼리 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/common.js"></script>
+
+<script>
+
+/* 섹션1-배너 스와이퍼 */
+var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {delay: 3000},
+    pagination: {
+        el: ".swiper-pagination",
+    },
+});
+
+/* 섹션2-리스트 스와이퍼 */
+var swiper2 = new Swiper(".mySwiper2", {
+    slidesPerView: 1.5, //모바일
+    spaceBetween: 30,
+    loop: true,
+
+    breakpoints: {
+    // 태블릿
+    767: {
+    slidesPerView: 2.5,
+    spaceBetween: 20,},
+
+    // PC
+    991: {
+    slidesPerView: 4.5,}
+    },
+});
+
+/* 섹션3-주목받는 공연 스와이퍼 */
+var swiper3 = new Swiper(".mySwiper3", {
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination-1",
+        },
+
+
+});
+
+
+/* 섹션4-스토어 스와이퍼*/
+var swiper4 = new Swiper(".mySwiper4", {
+    slidesPerView: 1.5, //모바일
+    spaceBetween: 30,
+    loop: true,
+
+    breakpoints: {
+    // 태블릿
+    767: {
+    slidesPerView: 2.5,
+    spaceBetween: 20,},
+
+    // PC
+    991: {
+    slidesPerView: 4.5,}
+    },
+});
+
+
+        let modal = document.querySelectorAll('.modal');  /* 모달창 */
+    
+        function open_modal(modal_num){
+                $('body').css('overflow','hidden');
+    
+                modal[modal_num].style.display ='block';  
+    
+                $('.close-bt').click(function(){
+                    $('body').css('overflow','auto');
+                    $('.modal').css('display','none');
+                                });
+            } ;
+    
+            $(document).ready(function(){
+        open_modal(0);
+    });
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
