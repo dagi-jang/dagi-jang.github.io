@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 기본 파비콘 -->
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<!-- iOS -->
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180x180.png">
+<!-- Android / PWA -->
+<link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="img/favicon-516x516.png">
+<!-- SVG 지원 -->
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+<!-- 구글폰트 노토산스(한글)-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+<!-- 구글폰트 로보토(영어) -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- 폰트어썸 -->
+<script src="https://kit.fontawesome.com/e5ed17a5ca.js" crossorigin="anonymous"></script>
+<!-- 스와이퍼 css 라이브러리 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+<!-- css -->
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/sub1.css">
+
+<title>다녀올개</title>
+</head>
+
+
+<body>
+    <!-- 헤더 -->
+    <header>
+        <nav class="container flex-box">
+            <div class="logo">
+                <img src="img/logo.png" alt=""  onclick="window.open('https://jaka307.dothome.co.kr/')">
+            </div>
+            <div class="flex-box">
+                <ul class="">
+                    <li><a href="sub1.html">회사소개</a></li>
+                    <li><a href="sub2.html">FAQ</a></li>
+                </ul>
+                <form class="search">
+                    <input type="search" placeholder="무엇이 필요하신가요?">
+                    <button type="submit" class="search-bt">
+                        <i class="fa-solid fa-magnifying-glass" onclick=""></i>
+                    </button>
+                </form>
+            </div>
+            <div id="bt"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+    </header>
+
+
+    <!-- 메인 -->
+    <main>
+        <!-- 섹션1 -->
+        <section class="s-1">
+            <div>
+                <img src="img/pc2_intro_banner.jpg" alt="">
+            </div>
+            <h2>당신의 가족이 일상을 유지할 수 있도록</h2>
+        </section>
+
+        <!-- 섹션2 -->
+        <section class="s-2">
+            <div>
+                <img src="img/pc2_banner_1.jpg" alt="">
+                <img src="img/mobile2_banner_1_2.jpg" alt="">
+            </div>
+        </section>
+
+        <!-- 섹션3 -->
+        <section class="s-3">
+            <div>
+                <img src="img/pc2_banner_2.jpg" alt="">
+                <img src="img/mobile2_banner_2.jpg" alt="">
+            </div>
+            <div class="s-3-text">
+                <p><span>다녀올개는</span> 바쁜 보호자를 위해
+                <br>
+                믿을 수 있는 산책·돌봄 서비스를 연결하는 반려견 케어 플랫폼입니다.
+                <br><br>
+                검증된 기록과 후기를 바탕으로 신뢰할 수 있는 돌봄 경험을 제공하며,
+                <br>
+                반려견의 일상이 끊기지 않도록 서포트 합니다.</p>
+            </div>
+        </section>
+
+        <!-- 섹션4 -->
+        <section class="container s-4">
+            <h2>경험으로 증명된 펫시터</h2>
+            <p>다녀올개는 자격과 경험을 모두 갖춘 펫시터와 함께합니다.
+            <br>
+            책으로 배운 돌봄이 아닌, 함께 살아본 돌봄을 전합니다.</p>
+            <div class="flex-box">
+                <div>
+                    <img src="img/pc2_petsitter_1.jpg" alt="">
+                    <img src="img/pc2_petsitter_3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/pc2_petsitter_4.jpg" alt="">
+                    <img src="img/pc2_petsitter_2.jpg" alt="">
+                </div>
+            </div>
+            <div class="petsitter-mobile">
+                <!-- 스와이퍼 스크립트 -->
+                <div class="swiper-box">
+                    <div class="swiper mySwiper" id="petsitter-sc">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/mobile2_pet sitter_1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/mobile2_pet sitter_2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/mobile2_pet sitter_3.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/mobile2_pet sitter_4.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="more"><a href="#">더보기</a></div>
+        </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="flex-box">
+                <div class="company">
+                    <ul>
+                        <li><span>(주) 펫앤미</span></li>
+                        <li>사업자 등록번호 : 456-75-164894</li>
+                        <li>통신판매업 신고번호 : 제 6458-경기의정부-34187</li>
+                        <li>대표 : 나대표 | 개인정보책임자 : 김책임</li>
+                        <li>주소 : 경기 의정부 금은동 110-10, 3층 (주식회사 펫앤미)</li>
+                        <li>문의 : petandme@petandme.com / 070-3574-6189</li>
+                    </ul>
+                </div>
+            <div class="show-info flex-box">
+                <ul>
+                    <li><span>회사</span></li>
+                    <li><a href="#">비전 및 설립이념</a></li>
+                    <li><a href="#">임직원 복지</a></li>
+                    <li><a href="#">공지사항</a></li>
+                </ul>
+                <ul>
+                    <li><span>고객센터</span></li>
+                    <li><a href="#">24시 연중무휴</a></li>
+                    <li><a href="#">채팅상담</a></li>
+                    <li><a href="#">전화상담</a></li>
+                </ul>
+                <ul>
+                    <li><span>서비스관련</span></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">안전 보상 제도</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 플로팅버튼 -->
+
+        <div class="fix-1">
+            <a href="#"><img src="img/pc1_booking_bt.png" alt=""></a>
+        </div>
+        <div class="fix-2">
+            <a href="#"><img src="img/pc1_top_bt.png" alt=""></a>
+        </div>
+    
+
+<!-- ========== 헤더 ==========  -->
+<!-- 버튼 스크립트 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/common.js"> </script>
+
+<!-- 스와이퍼 스크립트 -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+
+    /* 태블릿 */
+
+breakpoints:{
+        768:{
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+
+
+
+        
+        },
+
+
+
+
+    });
+
+</script>
+
+
+</body>
+</html>

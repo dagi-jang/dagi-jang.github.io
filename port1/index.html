@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 기본 파비콘 -->
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<!-- iOS -->
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180x180.png">
+<!-- Android / PWA -->
+<link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="img/favicon-516x516.png">
+<!-- SVG 지원 -->
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+<!-- 구글폰트 노토산스(한글)-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+<!-- 구글폰트 로보토(영어) -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- 폰트어썸 -->
+<script src="https://kit.fontawesome.com/e5ed17a5ca.js" crossorigin="anonymous"></script>
+<!-- 스와이퍼 css 라이브러리 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+<!-- css -->
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/index.css">
+
+
+
+<title>다녀올개</title>
+</head>
+
+
+<body>
+    <!-- 헤더 -->
+    <header>
+        <nav class="container flex-box">
+            <div class="logo">
+                <img src="img/logo.png" alt="" onclick="window.open('https://jaka307.dothome.co.kr/')">
+            </div>
+            <div class="flex-box">
+                <ul class="">
+                    <li><a href="sub1.html">회사소개</a></li>
+                    <li><a href="sub2.html">FAQ</a></li>
+                </ul>
+                <form class="search">
+                    <input type="search" placeholder="무엇이 필요하신가요?">
+                    <button type="submit" class="search-bt">
+                        <i class="fa-solid fa-magnifying-glass" onclick=""></i>
+                    </button>
+                </form>
+            </div>
+            <div id="bt"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+    </header>
+
+
+    <!-- 메인 -->
+    <main>
+        <!-- 섹션1 -->
+        <section class="s-1">
+            <div><img src="img/pc1_banner.jpg" alt=""></div>
+            <div><img src="img/mobile1_banner.jpg" alt=""></div>
+
+            <div class="text">
+                <h1>바쁜 일상 속,
+                <br class="pc-br1">
+                반려견의 하루를
+                <br class="pc-br2">
+                책임집니다</h1>
+                <p>믿을 수 있는 반려견 산책·돌봄 서비스</p>
+                <a href="#">서비스 예약</a>
+            </div>
+            <a href="#">서비스 예약</a>
+        </section>
+
+        <!-- 섹션2 -->
+        <section class="s-2">
+        <div class="container">
+                <h2>
+                    <span>당신의 가족을 위한</span>
+                    <br>다양한 서비스
+                </h2>
+            <!-- 스와이퍼 스크립트 -->
+            <!-- 방문돌봄 스와이프 -->
+            <div id="a">
+                <div class="swiper mySwiper" >
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/pc1_border_service_visit_1_1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/pc1_border_service_visit_2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/pc1_border_service_visit_3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/pc1_border_service_visit_4.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- 산책 스와이프 -->
+            <div id="b">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/pc1_border_service_walk_1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/pc1_border_service_walk_2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/pc1_border_service_walk_4.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/pc1_border_service_walk_3.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- 목욕 및 미용 스와이프 -->
+            <div id="c">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/pc1_border_service_beauty_1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/pc1_border_service_beauty_2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/pc1_border_service_beauty_3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/pc1_border_service_beauty_4.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+                <!-- 작은 메뉴 -->
+                <div class="sub-menu">
+                    <ul class="flex-box">
+                        <li class="active">방문돌봄</li>
+                        <li>산책</li>
+                        <li>목욕&middot;미용</li>
+                    </ul>
+                </div>
+    
+                <!-- 작은 메뉴 설명 -->
+                <div class="sub-text">
+                    <div id="sub-text-1">
+                        <p>보호자가 외출하거나 장시간 집을 비워야 할 때,
+                        인증된 펫시터가 직접 가정으로 방문해 반려견을 돌봐주는 서비스입니다.
+                        <br><br>
+                        식사와 물 급여, 간단한 놀이, 컨디션 확인 등
+                        반려견의 평소 생활 패턴에 적합한 맞춤형 돌봄을 진행해
+                        낯선 환경으로 인한 스트레스를 최소화합니다.</p>
+                    </div>
+    
+                    <div id="sub-text-2">
+                        <p>바쁜 보호자를 대신해 인증된 펫시터가 반려견과 함께 안전하게 산책을 대행하는 서비스입니다.
+                        <br><br>
+                        반려견의 성향과 컨디션을 고려해 산책 시간과 강도를 조절하며,
+                        산책 후에는 이동 경로와 상태를 기록으로 남겨
+                        보호자가 언제든지 확인할 수 있도록 합니다.
+                        </p>
+                    </div>
+
+                    <div id="sub-text-3">
+                        <p>반려견의 상태와 성향에 맞춰 목욕과 간단한 미용, 위생 관리를 제공하는 서비스입니다.
+                        <br><br>
+                        무리한 미용이 아닌 기본적인 케어를 중심으로 진행해
+                        청결과 건강을 함께 관리할 수 있도록 돕습니다.
+                        반려견이 안전함을 느낄 수 있는 장소에서 진행하기 때문에 스트레스를 최소화 합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 섹션3 -->
+        <section class="s-3">
+            <div class="container">
+                <h2><span>5만명 이상</span>이
+                    <br>
+                    선택한 믿을 수 있는 플랫폼
+                </h2>
+                <!-- 스와이퍼 스크립트 -->
+                <div class="swiper-box">
+                    <div class="swiper mySwiper2" id="review-sc">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/pc1_review_1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/pc1_review_2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/pc1_review_3.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/pc1_review_4.jpg" alt=""></div>
+                        </div>                    
+                    </div>
+                    <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                </div>
+                
+                <div class="more"><a href="#">더보기 </a></div>
+            </div>
+        </section>
+
+        <!-- 섹션4 -->
+        <section class="s-4">
+            <div> <!-- 릴레이티브 -->
+                <img src="img/pc1_bottom.jpg" alt="">
+                <img src="img/mobile1_bottom.jpg" alt="">
+                <!-- 앱솔루트 -->
+                <div class="s-4-text">
+                    <h2>다녀올개와 함께할
+                    <br>
+                    소중한 인재를 기다립니다
+                    </h2>
+                    <p>함께 반려견의 일상을 지켜주세요!</p>
+                    <a href="#">지원하기</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="flex-box">
+                <div class="company">
+                    <ul>
+                        <li><span>(주) 펫앤미</span></li>
+                        <li>사업자 등록번호 : 456-75-164894</li>
+                        <li>통신판매업 신고번호 : 제 6458-경기의정부-34187</li>
+                        <li>대표 : 나대표 | 개인정보책임자 : 김책임</li>
+                        <li>주소 : 경기 의정부 금은동 110-10, 3층 (주식회사 펫앤미)</li>
+                        <li>문의 : petandme@petandme.com / 070-3574-6189</li>
+                    </ul>
+                </div>
+            <div class="show-info flex-box">
+                <ul>
+                    <li><span>회사</span></li>
+                    <li><a href="#">비전 및 설립이념</a></li>
+                    <li><a href="#">임직원 복지</a></li>
+                    <li><a href="#">공지사항</a></li>
+                </ul>
+                <ul>
+                    <li><span>고객센터</span></li>
+                    <li><a href="#">24시 연중무휴</a></li>
+                    <li><a href="#">채팅상담</a></li>
+                    <li><a href="#">전화상담</a></li>
+                </ul>
+                <ul>
+                    <li><span>서비스관련</span></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">안전 보상 제도</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 플로팅버튼 -->
+        <div class="fix-1">
+            <a href="#"><img src="img/pc1_booking_bt.png" alt=""></a>
+        </div>
+        <div class="fix-2">
+            <a href="#"><img src="img/pc1_top_bt.png" alt=""></a>
+        </div>
+
+
+    <!-- 모달창 -->
+    <div class="modal" id="modal-1">
+        <div class="modal-wrap">
+            <div class="modal-body">
+                <div class="close-bt">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+                <div class="container-1400">
+                    <h1>웹페이지 가이드</h1>
+                    <div><img src="img/modal.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ========== 헤더 ==========  -->
+<!-- 버튼 스크립트 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/common.js"> </script>
+
+
+<!-- 스와이퍼 스크립트 -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+
+<!-- 서비스 설명 스와이퍼 -->
+<script>
+    let modal = document.querySelectorAll('.modal');  /* 모달창 */
+
+    function open_modal(modal_num){
+            $('body').css('overflow','hidden');
+
+            modal[modal_num].style.display ='block';  
+
+            $('.close-bt').click(function(){
+                $('body').css('overflow','auto');
+                $('.modal').css('display','none');
+                            });
+        } ;
+
+        $(document).ready(function(){
+    open_modal(0);
+});
+
+    var swiper = new Swiper(".mySwiper", {
+
+
+    /* 모바일화면 - 태블릿화면, 폰*/
+        slidesPerView: 1,
+        /* left:-25% */
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+
+    /* pc */
+
+breakpoints:{
+        991:{
+            slidesPerView: 3,
+        },
+        },
+    });
+
+
+        var swiper2 = new Swiper(".mySwiper2", {
+
+/* 후기 스와이퍼 */
+    /* 모바일화면 - 태블릿화면, 폰*/
+        slidesPerView: 1,
+        /* left:-25% */
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+        el: ".swiper-pagination",},
+        clickable: true,
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        
+
+    /* pc */
+
+breakpoints:{
+        991:{
+            slidesPerView: 3,
+        },
+        },
+    });
+
+</script>
+
+</body>
+</html>
