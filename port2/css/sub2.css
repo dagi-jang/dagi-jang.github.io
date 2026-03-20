@@ -1,0 +1,261 @@
+@charset "utf-8";
+/* ============================== PC 버전 ============================== */
+/* ====== 메인 ====== */
+main{padding-top: 95px;}
+
+
+/* === 섹션1 === */
+/* 건물 소개 버튼 */
+#s-1-2{display: none;}
+
+.s-1 .building .flex-box{justify-content: center; gap: 32px;}
+
+.s-1 .building .flex-box div{overflow: hidden; cursor: pointer;}
+
+.s-1 .building img{width: 100%; transition: all 0.3s;}
+
+.s-1 .building img:hover{transform: scale(1.1);}
+
+.s-1 .building .flex-box p{font-size: 36px; color: #ededed; font-weight: bold;}
+
+
+.s-1 .building .flex-box >div{position: relative;}
+
+.s-1 .building .flex-box >div p{
+    position: absolute; top: 50%; transform:translate(-50%, -50%); left: 50%; z-index: 1;}
+
+
+/* 극장스펙-레이아웃 */
+#s-1-1 >.flex-box.spec, #s-1-2 >.flex-box.spec{
+    border: #ededed solid 1px; justify-content: flex-start;
+    width: 80%; margin: auto; margin-top: 50px; margin-bottom: 50px;
+    padding: 40px 0px;}
+
+#s-1-1 .flex-box.spec>div:nth-child(1), #s-1-1 .flex-box.spec>div:nth-child(2)
+{border-right: solid 1px #ededed;}
+
+#s-1-2 .flex-box.spec>div:nth-child(1), #s-1-2 .flex-box.spec>div:nth-child(2)
+{border-right: solid 1px #ededed;}
+
+#s-1-1 .flex-box.spec >.flex-box, #s-1-2 .flex-box.spec >.flex-box
+{width: 33.33%; gap: 30px; align-items: center;
+justify-content: center;}
+
+
+/* 극장스펙-정보 텍스트 */
+#s-1-1 .flex-box p, #s-1-2 .flex-box p
+{font-size: 22px; font-weight: normal;}
+
+#s-1-1 .flex-box span, #s-1-2 .flex-box span
+{display: block; font-weight: normal; font-size: 18px;}
+
+.spec-icon img{width: 58px;}
+
+
+/* = 슬라이드 = */
+.swiper-slide img {display: block;}
+.swiper-img{position: relative; width: 80%; margin: auto;}
+
+
+/* 페이지네이션 */
+.swiper-img .swiper-button-prev{
+    left: 0; padding: 10px; position: absolute; background: rgba(0,0,0,0.7);}
+
+.swiper-img .swiper-button-next{
+    right: 0; padding: 10px; position: absolute; background: rgba(0,0,0,0.7);}
+
+
+:root {--swiper-theme-color: #ededed; --swiper-navigation-size: 50px;}
+
+/* 텍스트 */
+.swiper-img p{font-size: 20px; text-align: center; padding-top: 30px; padding-bottom: 50px;}
+h2.title {width: 80%; margin: auto; margin-top: 50px;
+    border-left: 10px solid #A92415;
+    padding-left: 10px;
+    margin-bottom: 20px;}
+
+
+/* = 좌석배치도 = */
+.seat {width: 80%; margin: auto; margin-bottom: 50px;}
+.seat h2{border-left: 10px solid #A92415; padding-left: 10px; margin-bottom: 20px;}
+
+.seat .seat_info img{width: 400px; margin: auto; padding-top: 40px; padding-bottom: 10px;}
+.seat .seat_info p{text-align: center; font-size: 18px; padding-bottom: 30px;}
+
+
+
+/* = 오시는 길 = */
+.map{width: 80%; margin: auto; margin-bottom: 50px;}
+.map h2{border-left: 10px solid #A92415; padding-left: 10px; margin-bottom: 30px;}
+
+.map .traffic{margin: auto; padding: 0px 30px;}
+
+.map .traffic .flex-box{align-items: center; margin-top: 30px;}
+
+.map .traffic .flex-box img{width: 70px; padding-right: 20px;}
+
+.map iframe{width: 100%; height: 530px; margin: auto;}
+
+.map .traffic ul{padding: 0px 60px;}
+
+.map .traffic ul li{list-style: disc; font-size: 18px; padding: 6px 0px;}
+
+
+
+
+/* ============================== 태블릿 버전 ============================== */
+@media(max-width:996px){
+/* 건물 소개 버튼 */
+.s-1 .flex-box{flex-wrap: nowrap;}
+
+h2.title {width: 100%;}
+
+.s-1 .building .flex-box{gap: 20px;}
+
+#s-1-1 >.flex-box.spec, #s-1-2 >.flex-box.spec{margin: 20px 0px;}
+
+/* 극장스펙 */
+/* 극장스펙-레이아웃 */
+#s-1-1 .flex-box.spec, #s-1-2 .flex-box.spec {width: 100%;}
+
+#s-1-1 .flex-box.spec >.flex-box, #s-1-2 .flex-box.spec >.flex-box {gap: 8px;}
+
+
+/* 극장스펙-정보 텍스트 */
+#s-1-1 .flex-box p, #s-1-2 .flex-box p{font-size: 18px;}
+
+#s-1-1 .flex-box span, #s-1-2 .flex-box span{font-size: 16px;}
+
+.spec-icon img{width: 40px;}
+
+
+
+/* 슬라이드 */
+.swiper-img{margin-bottom: 50px; width: 100%;}
+
+.swiper-slide img {width: 100%;}
+
+
+.swiper-img p {padding-bottom: 0px;}
+
+/* 페이지네이션 */
+
+.swiper-img .swiper-button-prev {left: 0%;}
+.swiper-img .swiper-button-next{right: 0%;}
+
+
+/* 텍스트 */
+.swiper-img p{font-size: 18px;}
+
+
+/* = 좌석배치도 = */
+.seat {width: 100%; margin-bottom: 50px;}
+
+.seat .seat_info img {width: 360px;}
+
+
+/* = 오시는 길 = */
+.map{width: 100%;}
+
+.map iframe{width: 100%;}
+
+}
+
+@media(max-width:768px){
+/* = 오시는 길 = */
+/* .map iframe{width: 90%;} */
+
+}
+
+
+/* ============================== 모바일 버전 ============================== */
+@media(max-width:767px){
+main{padding-top: 50px;}
+
+
+/* 건물 소개 버튼 */
+.s-1 .building img{width: 300px;}
+h2.title {margin-top: 20px; font-size: 20px;
+        border-left: #A92415 6px solid;
+        padding-left: 10px;}
+
+/* 극장스펙 */
+/* 극장스펙-레이아웃 */
+#s-1-1 >.flex-box.spec, #s-1-2 >.flex-box.spec
+{margin-top: 14px; margin-bottom: 14px;}
+
+#s-1-1 .flex-box span, #s-1-2 .flex-box span{display: block; }
+
+#s-1-1 .flex-box.spec, #s-1-2 .flex-box.spec{flex-wrap: wrap; padding: 0px; gap: 0px;}
+
+
+#s-1-1 .flex-box.spec >.flex-box, #s-1-2 .flex-box.spec >.flex-box
+{gap: 20px; width: 90%; margin: auto; padding: 14px 0px;
+    justify-content: flex-start;}
+
+#s-1-1 .flex-box.spec>div:nth-child(1), #s-1-1 .flex-box.spec>div:nth-child(2),
+#s-1-2 .flex-box.spec>div:nth-child(1), #s-1-2 .flex-box.spec>div:nth-child(2)
+{border-right: 0;}
+
+#s-1-1 .flex-box.spec>div:nth-child(2), #s-1-2 .flex-box.spec>div:nth-child(2)
+{border-top: solid 1px #ededed; border-bottom: solid 1px #ededed;}
+
+
+.s-1 .building .flex-box {gap: 8px;}
+
+.s-1 .flex-box{gap: 10px;}
+
+
+
+/* 극장스펙-정보 텍스트 */
+.s-1 .building .flex-box p{font-size: 22px;}
+
+#s-1-1 .flex-box p, #s-1-2 .flex-box p{font-size: 16px;}
+#s-1-1 .flex-box span, #s-1-2 .flex-box span{font-size: 14px;}
+
+
+/* 페이지네이션 */
+:root {--swiper-navigation-size: 30px;}
+.swiper-img .swiper-button-prev{padding: 6px;}
+.swiper-img .swiper-button-next{padding: 6px;}
+
+
+/* 텍스트 */
+.swiper-img p{font-size: 14px; text-align: left; padding-top: 10px;}
+
+
+
+/* = 좌석배치도 = */
+.seat h2{font-size: 20px; border-left: #A92415 6px solid; padding-left: 10px;}
+
+.seat .seat_info img{width: 250px; padding-top: 0px;}
+
+.seat .seat_info p{font-size: 14px;}
+
+
+
+/* = 오시는 길 = */
+.map h2{font-size: 20px; border-left: #A92415 6px solid; padding-left: 10px;}
+
+.map .traffic{padding: 0px;}
+
+.map .traffic .flex-box img {width: 40px; padding-right: 0px;}
+
+.map iframe{width: 100%;}
+
+.map .traffic ul{padding: 0px 20px;}
+
+.map .traffic ul li{font-size: 16px;}
+
+}
+
+
+
+@media(max-width:414px){
+.container-1200{padding: 10px 10px 10px 20px;}
+
+/* = 건물 소개 버튼 = */
+.s-1 .building .flex-box p{font-size: 20px;}
+
+}
+

@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+/* ====== 공통사항 ====== */
+html{scroll-behavior: smooth;}
+*{margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; list-style: none;
+    }
+body{background-color: #222222; color: #ededed; font-family: "Roboto","Noto Sans KR", sans-serif;
+font-weight:normal;}
+img{width: 100%; display: block;}
+.flex-box{flex-wrap: wrap; display: flex;}
+.container-1720{max-width: 1720px; margin: auto; padding: 20px 20px;}
+.container-1200{max-width: 1200px; margin: auto; padding: 10px 20px;}
+.container-1000{max-width: 1000px; margin: auto; padding: 0px 20px;}
+a{color: #ededed;}
+
+
+/* ============================== PC 버전 ============================== */
+/* ====== 헤더 ====== */
+#mainNav{position: fixed; top:0px; left:0px; z-index: 10; width: 100%;
+        padding-top: 10px; padding-bottom: 10px; transition: all 0.5s;
+        background: #101010;}
+
+#mainNav.navbar-shrink {padding-top: 0px; padding-bottom: 0px;}
+
+
+/* 메뉴 호버시 줄 띄우기 효과 */
+header ul li{position: relative;}
+
+header ul li::after{content: ''; width: 0%; height: 3px; background-color:#A92415;
+                    position: absolute; z-index: 100;
+                    left:0%; top:-5px; transition:all 0.3s;}
+
+header ul li:hover::after {width: 100%; left: 0%;}
+
+
+.logo{width: 100px; margin-right: 20px;}
+.flex-box ul{font-size: 20px; font-weight: 600;}
+
+
+nav.flex-box{justify-content: space-between;}
+nav .flex-box{gap: 80px;}
+nav .menu{gap: 30px;}
+
+nav .menu{align-items: center;cursor: pointer;}
+nav .menu a{font-size: 24px;}
+nav .menu a:hover{color: #A92415;}
+nav .menu p{font-size: 18px;}
+
+/* 모바일 메뉴 버튼 */
+#mobile-menu{
+    width: 100%; height: 100vh;background-color: #ededed; position: fixed; z-index: 1100;
+    right: -100%; top: 0; color: #595959; transition: all 0.3s ;}
+
+/* ====== 푸터 ====== */
+.footer-tablet{display: none;}
+footer{background-color: #101010; padding: 30px 0px; font-weight:300;}
+footer img{width: 220px; padding-bottom: 30px;}
+
+footer .container-1720 .flex-box{justify-content: space-between}
+footer .container-1720 .theater{justify-content: space-between}
+
+footer span{font-weight: 600;}
+
+
+footer .link-icon{font-size: 40px; gap: 0px;}
+footer .link-icon a:hover{color: #A92415;}
+
+
+
+/* ====== 플로팅버튼 ====== */
+.top{width: 60px; height: 60px; line-height: 60px;
+    border-radius: 50%; text-align: center; background-color: #ededed; 
+    position: fixed; z-index: 10; right: 3%; bottom: 3%;transform: translate(-3%, -3%);
+    display: none;}
+.top >a{color: #A92415; font-size: 16px;}
+
+
+
+
+/* ============================== 태블릿 버전 ============================== */
+@media(max-width:996px){
+/* ====== 헤더 ====== */
+nav .flex-box{gap: 40px; align-items: center;}
+nav .menu{margin-left: 100px;}
+
+nav .menu a:hover, nav .menu p:hover{color: #ededed;}
+
+
+/* ====== 푸터 ====== */
+.footer-tablet{display: block;}
+.footer-pc{display: none;}
+
+/* footer p{font-size: 14px;} */
+
+.footer-tablet >div:nth-child(1), .footer-tablet >div:nth-child(1) >p
+{display: inline-block;}
+
+.footer-tablet img{padding-bottom: 0px;}
+
+.footer-tablet div{padding-bottom: 20px;}
+
+footer .container-1720 .flex-box {justify-content: flex-start;}
+footer .container-1720 .footer-tablet .flex-box {gap: 20px;}
+
+footer .container-1720 .flex-box:nth-child(3){gap: 0px;}
+footer .link-icon{justify-content: flex-start; padding-bottom: 0px;}
+
+
+/* ====== 플로팅버튼 ====== */
+.top{width: 80px; height: 80px; line-height: 80px;
+    border-radius: 50%; text-align: center; background-color: #ededed; 
+    position: fixed; z-index: 10; right: 3%; bottom: 3%;transform: translate(-3%, -3%);
+    display: none;}
+.top >a{color: #A92415; font-size: 18px;}
+}
+
+.mobile-header{display: none;}
+
+/* ============================== 모바일 버전 ============================== */
+@media(max-width:767px){
+/* ====== 헤더 ====== */
+
+#mainNav{display: none;}
+.mobile-header{display: flex; width: 100%; background-color: #101010; position: fixed;
+    z-index: 1000; padding: 10px 20px; color: #ededed; align-items: center;
+    justify-content: space-between;}
+
+.container-1400{padding: 10px 20px;}
+
+.logo{width: 70px;}
+
+/* 모바일 메뉴 */
+#mobile-menu.open{right: 0;}
+#mobile-menu .mobile-menu-top{background-color: #A92415; height: 30vh; position: relative;}
+#mobile-menu .mobile-menu-top >div{top: 50%; width: 100%;
+position: absolute; transform: translateY(-50%);}
+#mobile-menu .mobile-menu-top p{color: #ededed; font-size: 30px; text-align: center;}
+
+#mobile-menu .mobile-menu-top .flex-box p:nth-child(1) {display: inline-block;
+    font-size: 20px; padding: 8px 14px; border: #ededed 1px solid;}
+
+#mobile-menu .mobile-menu-top .flex-box p:nth-child(2) {display: inline-block;
+    font-size: 20px; padding: 8px 24px; background-color: #ededed;
+    color: #A92415; font-weight: 600;}
+
+#mobile-menu .mobile-menu-top a{font-size: 18px; display: block; text-align: center;}
+
+#mobile-menu .mobile-menu-top .flex-box{
+justify-content: center; gap: 20px; padding: 20px 0;}
+
+#mobile-menu span{font-weight: bold;}
+
+
+#mobile-menu .mobile-menu-list{padding: 0px 28px; color: #777777;
+    position: absolute; bottom: 0px; width: 100%;
+            overflow-y: auto;
+        height: 70vh;}
+
+#mobile-menu .mobile-menu-list span{padding: 0px 10px; color: #595959;
+    font-size: 22px; border-left: #A92415 solid 8px; display: inline-block;}
+
+#mobile-menu .mobile-menu-list span a{padding: 0px 10px; color: #595959;
+    }
+
+
+
+
+#mobile-menu .mobile-menu-list ul{padding: 28px 0px; border-bottom: solid 3px #C4C4C4}
+#mobile-menu .mobile-menu-list ul:nth-child(3){border-bottom: none;}
+#mobile-menu .mobile-menu-list ul div{padding: 14px 20px; font-size: 20px; font-weight: 500;}
+#mobile-menu .mobile-menu-list ul div li{padding: 2px 10px;}
+
+
+
+#mobile-menu .icon-close{position: absolute;
+    z-index: 100; top: 10px; right: 16px;
+    font-size: 22px; color: #ededed;}
+
+
+
+/* ====== 푸터 ====== */
+footer .container-1720 .footer-tablet .flex-box {gap: 6px;}
+
+footer p{font-size: 14px;}
+
+footer .container-1720 .flex-box {padding-bottom: 40px;}
+
+footer .link-icon{font-size: 36px;}
+
+/* ====== 플로팅버튼 ====== */
+.top{width: 60px; height: 60px; line-height: 60px;
+    right: 3%; bottom: 3%;transform: translate(-3%, -3%);}
+.top >a{font-size: 16px;}
+
+}
+
+
+
+@media(max-width:410px){
+/* 모바일 메뉴 */
+#mobile-menu .mobile-menu-top .flex-box p:nth-child(1) {font-size: 18px; padding: 6px 20px;}
+
+#mobile-menu .mobile-menu-top .flex-box p:nth-child(2) {font-size: 18px; padding: 6px 20px;}
+
+
+
+#mobile-menu .mobile-menu-top .flex-box {padding: 10px 0px;}
+}
